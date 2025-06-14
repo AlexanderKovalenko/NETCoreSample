@@ -39,6 +39,10 @@ jobs:
     - name: Restore
       run: dotnet restore
 
+    # List Sources
+    - name: List
+      run: dotnet nuget list source
+
     # Build
     - name: Build
       run: dotnet build
